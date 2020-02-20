@@ -1,0 +1,5 @@
+{
+  "commands": {
+    "artifacts": "dist/index.js"
+  }
+}

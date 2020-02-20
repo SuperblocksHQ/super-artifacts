@@ -1,0 +1,36 @@
+{
+  "name": "super-artifacts",
+  "version": "0.0.1",
+  "description": "Truffle plugin to harvest artifacts for Superblocks deployments.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "tslint --config tslint.json --project tsconfig.json",
+    "build": "rm -rf dist && tsc",
+    "publish-lib": "node publish.js",
+    "test": "mocha --require ts-node/register --exit src/**/*spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:SuperblocksHQ/super-artifacts.git"
+  },
+  "author": "Superblocks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuperblocksHQ/super-artifacts/issues"
+  },
+  "homepage": "https://www.superblocks.com",
+  "devDependencies": {
+    "@types/ethereum-protocol": "^1.0.0",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^13.7.0",
+    "@types/node-fetch": "^2.5.3",
+    "ts-node": "^8.5.4",
+    "ts-sinon": "^1.0.24",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
