@@ -1,5 +1,7 @@
 # Super Artifacts
 
+[![Superblocks](https://superblocks.com/d/superblocks/projects/truffle-artifacts-plugin.svg?branch=master)](https://superblocks.com/d/superblocks/projects/truffle-artifacts-plugin) ![npm](https://img.shields.io/npm/v/super-artifacts?color=blue)
+
 Truffle plugin to be used with Superblocks CI. This plugin enables capturing deployment artifacts and pushing them to the Superblocks platform.
 
 ## Usage
