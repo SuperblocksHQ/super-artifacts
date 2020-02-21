@@ -11,6 +11,7 @@ export class Artifacts {
     }
 
     static createNew(deploymentId: string, artifacts: ITruffleBuild[]) {
+        console.log(artifacts);
         if (!deploymentId || !artifacts) {
             throw new Error('Invalid parameters while creating artifacts');
         }

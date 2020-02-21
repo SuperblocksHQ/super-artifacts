@@ -1,27 +1,25 @@
 {
     "compilerOptions": {
-        "target": "es5",
-        "lib": ["es6", "dom"],
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
         "module": "commonjs",
-        "declaration": true,
+        "target": "es2017",
         "noImplicitAny": true,
         "moduleResolution": "node",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "outDir": "dist",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "node_modules/*",
+                "src/*"
+            ]
+        },
         "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true,
-        "typeRoots": [ "./typings", "./node_modules/@types", "node_modules/@types/node" ],
-        "resolveJsonModule": true
+        "noUnusedParameters": true
     },
-    "exclude": [
-        "node_modules",
-        "dist",
-        "src/**/*.spec.ts",
-        "typings"
-    ],
     "include": [
         "src/**/*.ts"
     ]

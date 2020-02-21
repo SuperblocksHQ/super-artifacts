@@ -1,6 +1,5 @@
 import { ISuperBlocksClient, ITruffle } from '../interfaces';
-import { ITruffleConfig } from '../../app-domain';
-import { Artifacts } from '../../app-domain';
+import { ITruffleConfig, Artifacts } from '../../app-domain';
 
 export class HarvestArtifactsCommand {
     private readonly truffle: ITruffle;
