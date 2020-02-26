@@ -16,8 +16,12 @@ export const superblocksClient: ISuperBlocksClient = {
             },
             body:  JSON.stringify({artifacts}) ,
         });
-        if (response.status === 404) {
-            throw new Error('Access denied.');
+
+        if (response.ok) {
+            console.log('[Superblocks Artifacts] Deployment Artifacts have been saved!');
+        } else {
+            const error = await response.text();
+            throw new Error(`[Superblocks Artifacts] cannot save artifacts: ${error}`);
         }
     }
 };
