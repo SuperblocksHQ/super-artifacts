@@ -8,7 +8,7 @@ export const truffle: ITruffle = {
         const builds: ITruffleBuild[] = [];
 
         const promises = getAllContractNamesFromDir(contractBuildsDir).map((name: string) => {
-            return new Promise(async (resolve, reject) => {
+            return new Promise((resolve, reject) => {
 
                 try {
                     const build: ITruffleBuild = JSON.parse(readFileSync(`${contractBuildsDir}/${name}`).toString());
