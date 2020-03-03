@@ -1,5 +1,5 @@
 {
   "commands": {
-    "artifacts": "dist/index.js"
+    "artifacts": "index.js"
   }
 }

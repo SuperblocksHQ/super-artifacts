@@ -1,6 +1,6 @@
 {
   "name": "super-artifacts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Truffle plugin to harvest artifacts for Superblocks deployments.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
