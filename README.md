@@ -28,4 +28,4 @@ Truffle plugin to be used with Superblocks CI. This plugin enables capturing dep
                       ...
       
       
-   *You need at least version 0.0.17 of super-web3-provider to use this plugin
+   *You need at least version 0.0.18 of super-web3-provider to use this plugin
